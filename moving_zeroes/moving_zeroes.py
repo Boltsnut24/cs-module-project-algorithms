@@ -3,9 +3,19 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def moving_zeroes(arr):
-    # Your code here
+    #split 0's into one array and non-zero into another
+    zeroArr = []
+    nonZeroArr = []
+    for i in range(len(arr)):
+        if(arr[i] == 0):
+            zeroArr.append(0)
+        else:
+            nonZeroArr.append(arr[i])
+            
+    #merge the arrays
+    return nonZeroArr + zeroArr
+    
 
-    pass
 
 
 if __name__ == '__main__':
