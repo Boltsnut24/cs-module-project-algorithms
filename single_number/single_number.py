@@ -4,8 +4,17 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    seen = [0] * len(arr)
 
-    pass
+    for i in range(len(arr)):
+        seen[arr[i]] = seen[arr[i]] + 1
+
+    index = 0
+    while index < len(seen):
+        if(seen[index] != 2 and seen[index] != 0):
+            return index
+        index = index + 1
+
 
 
 if __name__ == '__main__':
