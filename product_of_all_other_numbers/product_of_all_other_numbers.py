@@ -13,10 +13,15 @@ def product_of_all_other_numbers(arr):
                 product = product * arr[j]
         
         productArray.append(product)
-
+    
     return productArray
 
-
+#Goal: O(n) time and O(1) space NO DIVISION
+    #need to modify given array and utilize that space
+    #one pass through? not necessarily, pass through and then once again
+        #first pass through calculates all possible results
+        #second pass modifys original array?
+    
 
 if __name__ == '__main__':
     # Use the main function to test your implementation

@@ -15,6 +15,7 @@ def sliding_window_max(nums, k):
     
     return maximums
 
+#Goal: O(n) time
 
 
 if __name__ == '__main__':
